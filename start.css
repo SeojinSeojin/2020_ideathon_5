@@ -1,0 +1,31 @@
+body{
+    background-color: orange;
+}
+
+#main{
+    position:absolute;
+    width:300px;
+    height:300px;
+    left:50%;
+    top:50%;
+    margin-left:-150px;
+    margin-top:-150px;
+    text-align:center;
+    color:white;
+    background-color: black;
+    border:20px solid white;
+}
+
+a.button{
+    display:block;
+    margin:0 auto;
+    border-radius:15px;
+    padding:20px 30px;
+    max-width:150px;
+    color:black;
+    background-color:white;
+}
+
+a.button:hover{
+    background-color:orange;
+}
