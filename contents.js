@@ -32,12 +32,14 @@ var i;
 for (i = 0 ; i < qArray.length ; i++){
 
     document.getElementsByClassName("questions")[i].innerHTML=qArray[i];
-    document.getElementsByClassName("select")[i].innerHTML=`<span>전혀 아니다</span>
-    <button class="b1"></button>
-    <button class="b2"></button>
-    <button class="b3"></button>
-    <button class="b4"></button>
-    <button class="b5"></button>
-    <span>매우 그렇다</span>`
+    document.getElementsByClassName("select")[i].innerHTML=`<ul>
+    <span>전혀 아니다</span>
+    <li><input type="radio" name='answer' value='b1' class="b1"></li>
+    <li><input type="radio" name='answer' value='b2' class="b2"></li>
+    <li><input type="radio" name='answer' value='b3' class="b3"></li>
+    <li><input type="radio" name='answer' value='b4' class="b4"></li>
+    <li><input type="radio" name='answer' value='b5' class="b5"></li>
+    <span>매우 그렇다</span>
+  </ul>`
 
 }
