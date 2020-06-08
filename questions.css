@@ -14,38 +14,61 @@ body {
 .questions {
   font-size: 30px;
   font-weight: 700;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 .select {
   margin: 100px 0;
 }
-.select span {
+ul span {
+  display: inline-block;
   font-size: 20px;
   font-weight: 600;
   padding: 15px;
+  
 }
-.select button {
+ul li {
   display: inline-block;
-  padding: 10px;
   margin: 0 10px;
-  border-radius: 50%;
-  background: white;
+  color: #ec995c;
+}
+input[type="radio" i],
+input[type="radio" i]:checked{
+  -webkit-appearance: none;
+}
+input[type="radio" i]:hover{
+  box-shadow: 0 0 0 2px rgb(141, 141, 141);
+  opacity: 1;
+}
+input[type="radio" i]:checked{
+  box-shadow: 0 0 0 4px rgb(148, 148, 148);
+  opacity: 1;
 }
 .b1 {
   border: #ec995c 23px solid;
+  border-radius: 50%;
+  padding: 10px;  
 }
 .b2 {
-  border: #ec995c 23px solid;
+  border: #ec995c 20px solid;
+  border-radius: 50%;
   opacity: 55%;
+  padding: 8px;
 }
 .b3 {
-  border: #c0c0c0 23px solid;
+  border: #c0c0c0 15px solid;
+  border-radius: 50%;
+  padding: 7px;
 }
 .b4 {
-  border: #68a882 23px solid;
+  border: #68a882 20px solid;
+  border-radius: 50%;
   opacity: 55%;
+  padding: 8px;
 }
 .b5 {
   border: #68a882 23px solid;
+  border-radius: 50%;
+  padding: 10px;
 }
 .swiper-container {
   width: 100%;
@@ -73,4 +96,7 @@ body {
 }
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background: #ec995c;
+}
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+  color: #ec995c;
 }
