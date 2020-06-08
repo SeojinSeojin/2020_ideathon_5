@@ -11,11 +11,11 @@ var swiper = new Swiper(".swiper-container", {
 });
 
 //진행 50% 이상 시 색 변경
-const question = document.getElementByClassName("questions");
+const question = document.getElementsByClassName("questions");
 const progressbarColor = document.getElementsByClassName(
     "swiper - pagination - progressbar - fill"
 );
-//문항 넘버를 문자열로 인식하게 해서 십의자리수가 2이면 색 변경
-if (question.length > 1 && question[0] === "2") {
+
+if (id > 14) {
     progressbarColor.style.background("#68a882");
 }
