@@ -1,0 +1,76 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.questions {
+  font-size: 30px;
+  font-weight: 700;
+}
+.select {
+  margin: 100px 0;
+}
+.select span {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px;
+}
+.select button {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background: white;
+}
+.b1 {
+  border: #ec995c 23px solid;
+}
+.b2 {
+  border: #ec995c 23px solid;
+  opacity: 55%;
+}
+.b3 {
+  border: #c0c0c0 23px solid;
+}
+.b4 {
+  border: #68a882 23px solid;
+  opacity: 55%;
+}
+.b5 {
+  border: #68a882 23px solid;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #ec995c;
+}
