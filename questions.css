@@ -1,102 +1,124 @@
 html,
 body {
-  position: relative;
-  height: 100%;
+    position: relative;
+    height: 100%;
 }
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-.questions {
-  font-size: 30px;
-  font-weight: 700;
-  font-family: 'Noto Sans KR', sans-serif;
-}
-.select {
-  margin: 100px 0;
-}
-ul span {
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 15px;
-  
-}
-ul li {
-  display: inline-block;
-  margin: 0 10px;
-  color: #ec995c;
-}
-input[type="radio" i],
-input[type="radio" i]:checked{
-  -webkit-appearance: none;
-}
-input[type="radio" i]:hover{
-  box-shadow: 0 0 0 2px rgb(141, 141, 141);
-  opacity: 1;
-}
-input[type="radio" i]:checked{
-  box-shadow: 0 0 0 4px rgb(148, 148, 148);
-  opacity: 1;
-}
-.b1 {
-  border: #ec995c 23px solid;
-  border-radius: 50%;
-  padding: 10px;  
-}
-.b2 {
-  border: #ec995c 20px solid;
-  border-radius: 50%;
-  opacity: 55%;
-  padding: 8px;
-}
-.b3 {
-  border: #c0c0c0 15px solid;
-  border-radius: 50%;
-  padding: 7px;
-}
-.b4 {
-  border: #68a882 20px solid;
-  border-radius: 50%;
-  opacity: 55%;
-  padding: 8px;
-}
-.b5 {
-  border: #68a882 23px solid;
-  border-radius: 50%;
-  padding: 10px;
-}
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
 
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
+
+.questions {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.select {
+    margin: 100px 0;
+}
+
+ul span {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ec995c;
+}
+
+input[type="radio" i],
+input[type="radio" i]:checked {
+    -webkit-appearance: none;
+}
+
+input[type="radio" i]:hover {
+    box-shadow: 0 0 0 2px rgb(141, 141, 141);
+    opacity: 1;
+}
+
+input[type="radio" i]:checked {
+    box-shadow: 0 0 0 4px rgb(148, 148, 148);
+    opacity: 1;
+}
+
+form {
+    height: 100%;
+}
+
+.b1 {
+    border: #ec995c 23px solid;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.b2 {
+    border: #ec995c 20px solid;
+    border-radius: 50%;
+    opacity: 55%;
+    padding: 8px;
+}
+
+.b3 {
+    border: #c0c0c0 15px solid;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.b4 {
+    border: #68a882 20px solid;
+    border-radius: 50%;
+    opacity: 55%;
+    padding: 8px;
+}
+
+.b5 {
+    border: #68a882 23px solid;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  background: #ec995c;
+    background: #ec995c;
 }
-.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
-  color: #ec995c;
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+    color: #ec995c;
 }
