@@ -34,7 +34,7 @@ for (i = 0; i < qArray.length; i++) {
     document.getElementsByClassName("questions")[i].innerHTML = qArray[i];
     document.getElementsByClassName("select")[i].innerHTML = `<ul>
     <span>전혀 아니다</span>
-    <li><input type="radio" name='${i}' value='1' class="b1"></li>
+    <li><input type="radio" name='${i}' value='1' class="b1" required></li>
     <li><input type="radio" name='${i}' value='2' class="b2"></li>
     <li><input type="radio" name='${i}' value='3' class="b3"></li>
     <li><input type="radio" name='${i}' value='4' class="b4"></li>
