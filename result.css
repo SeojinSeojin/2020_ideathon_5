@@ -1,5 +1,5 @@
-button{
-    font-size:15px;
+button {
+    font-size: 15px;
     width: 100px;
     height: 33px;
     border-radius: 18%;
@@ -7,57 +7,74 @@ button{
     background-color: #C0C0C0;
     box-shadow: 0px 3px 2px 2px rgba(76, 75, 75, 0.3);
     border: solid rgb(172, 172, 172) 2px;
+    transition: .3s;
 }
-img{
+
+button:hover {
+    box-shadow: 0px 4px 2.2px 2.2px rgba(76, 75, 75, 0.51);
+    border: solid rgba(0, 0, 0, 0.3) 2px;
+    background-color: grey;
+}
+
+img {
     width: 100px;
 }
-body{
+
+body {
     color: #626262;
     line-height: 170%;
     font-size: 18px;
 }
-.share{
+
+.share {
     width: 70px;
 }
-.photo{
-    width:500px;
+
+.photo {
+    width: 500px;
     border-radius: 20%;
     position: relative;
     top: 5%;
     left: -30%;
 }
-.inf{
+
+.inf {
     grid-column-start: 3;
     grid-column-end: 5;
     margin-top: 10%;
     margin-left: 0;
     width: 90%;
 }
-.exp{
+
+.exp {
     font-size: 25px;
     line-height: 150%;
 }
-.classif{
+
+.classif {
     font-size: 19px;
     font-weight: bold;
 }
-#grid{
+
+#grid {
     display: grid;
     width: 900px;
     height: 530px;
     grid-template-columns: 200px 200px 250px 250px;
     grid-template-rows: 400px 130px;
     text-align: center;
-    border: solid rgb(103, 168, 129,0.87) 5px;
+    border: solid rgb(103, 168, 129, 0.87) 5px;
     border-radius: 5%;
     vertical-align: middle;
-    margin-top:3%;
-    margin-left:20%;
+    margin-top: 3%;
+    margin-left: 20%;
 }
-#grid .inf{
+
+#grid .inf {
     text-align: left;
 }
-#reset{
+
+#reset {
     font-size: 25px;
     width: 150px;
     height: 50px;
@@ -67,3 +84,5 @@ body{
     margin-top: 3%;
     margin-left: 45%;
 }
+
+* {}
