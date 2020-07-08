@@ -58,8 +58,12 @@ p {
   font-size: 14px;
 }
 @media (max-width: 500px) {
+  html{
+    height: 100%;
+  }
   body {
     margin: 4px 0;
+    height: calc(100% - 8px);
   }
   .main {
     position: relative;

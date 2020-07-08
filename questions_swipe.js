@@ -25,3 +25,7 @@ const changeBarColor = () => {
 
 swiperBtnN.onclick = changeBarColor;
 swiperBtnP.onclick = changeBarColor;
+
+//btn 클릭 시 다음 슬라이드로 넘어가는 코드
+const btnSlideNext = document.getElementsByClassName("");
+btnSlideNext.onclick = swiper.slideNext();
