@@ -51,6 +51,12 @@ body {
   font-size: 19px;
   font-weight: bold;
 }
+.kakao {
+  width: 50px;
+}
+.insta {
+  width: 70px;
+}
 
 #grid {
   font-family: "Noto Sans KR", sans-serif;
@@ -137,7 +143,7 @@ body {
   .item-rec,
   .service-rec,
   .friend {
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 500;
   }
 
