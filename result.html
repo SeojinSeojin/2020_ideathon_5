@@ -41,23 +41,7 @@
         <div class="classif">자랑하기</div>
         <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
         <a id="kakao-link-btn" href="javascript:sendLink()"><img class="kakao" src="images/kakao icon.png"></a>
-        <script type='text/javascript'>
-          Kakao.init('065e14567de4635f0d388d1a0718dbdb');
-          function sendLink() {
-            Kakao.Link.sendDefault({
-              objectType: 'feed',
-              content: {
-                title: '나와 어울리는 직업은?',
-                description: '설명',
-                imageUrl: 'images_professional/1.svg',
-                link: {
-                  mobileWebUrl: 'result.html',
-                  webUrl: 'result.html'
-                }
-              }
-            });
-          }
-          </script>
+        <script src="kakao.js"></script>
         <img class="insta" src="images/insta icon.png" />
       </div>
       <div class="restart-btn">
@@ -66,7 +50,6 @@
         </button>
       </div>
     </div>
-
     <script src="result.js"></script>
   </body>
 </html>
