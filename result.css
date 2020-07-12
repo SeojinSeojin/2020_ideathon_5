@@ -1,86 +1,187 @@
 button {
-    font-size: 15px;
-    width: 100px;
-    height: 33px;
-    border-radius: 18%;
-    color: white;
-    background-color: #C0C0C0;
-    box-shadow: 0px 3px 2px 2px rgba(76, 75, 75, 0.3);
-    border: solid rgb(172, 172, 172) 2px;
-    transition: .3s;
+  font-size: 15px;
+  width: 100px;
+  height: 33px;
+  border-radius: 6px;
+  color: white;
+  background-color: #c0c0c0;
+  box-shadow: 0px 3px 2px 2px rgba(76, 75, 75, 0.3);
+  border: solid rgb(172, 172, 172) 2px;
+  transition: 0.3s;
 }
 
 button:hover {
-    box-shadow: 0px 4px 2.2px 2.2px rgba(76, 75, 75, 0.51);
-    border: solid rgba(0, 0, 0, 0.3) 2px;
-    background-color: grey;
+  box-shadow: 0px 4px 2.2px 2.2px rgba(76, 75, 75, 0.51);
+  border: solid rgba(0, 0, 0, 0.3) 2px;
+  background-color: grey;
 }
 
 img {
-    width: 100px;
+  width: 100px;
 }
 
 body {
-    color: #626262;
-    line-height: 170%;
-    font-size: 18px;
-}
-
-.share {
-    width: 70px;
+  color: #626262;
+  line-height: 170%;
+  font-size: 18px;
 }
 
 .photo {
-    width: 500px;
-    border-radius: 20%;
-    position: relative;
-    top: 5%;
-    left: -30%;
+  width: 450px;
+  border-radius: 20%;
+  position: relative;
+  top: 5%;
+  left: -10%;
 }
 
 .inf {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    margin-top: 10%;
-    margin-left: 0;
-    width: 90%;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  margin-top: 10%;
+  margin-left: 0;
+  width: 90%;
 }
 
 .exp {
-    font-size: 25px;
-    line-height: 150%;
+  font-size: 25px;
+  line-height: 150%;
 }
 
 .classif {
-    font-size: 19px;
-    font-weight: bold;
+  font-size: 19px;
+  font-weight: bold;
 }
 
 #grid {
-    display: grid;
-    width: 900px;
-    height: 530px;
-    grid-template-columns: 200px 200px 250px 250px;
-    grid-template-rows: 400px 130px;
-    text-align: center;
-    border: solid rgb(103, 168, 129, 0.87) 5px;
-    border-radius: 5%;
-    vertical-align: middle;
-    margin-top: 3%;
-    margin-left: 20%;
+  font-family: "Noto Sans KR", sans-serif;
+  display: grid;
+  box-sizing: border-box;
+  width: 900px;
+  height: 530px;
+  grid-template-columns: 200px 200px 250px 250px;
+  grid-template-rows: 400px 130px;
+  text-align: center;
+  border: solid rgb(103, 168, 129, 0.87) 5px;
+  border-radius: 20px;
+  vertical-align: middle;
+  margin-top: 3%;
+  margin-left: 20%;
 }
 
 #grid .inf {
-    text-align: left;
+  text-align: left;
 }
 
 #reset {
-    font-size: 25px;
-    width: 150px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 25px;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #68a882;
+  opacity: 0.87;
+  margin-top: 3%;
+  margin-left: 45%;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  #grid {
+    row-gap: 5%;
+    height: 100%;
+    width: 100%;
+    margin: -8px;
+    grid-template-columns: 90px 90px 120px 120px;
+    grid-template-rows: 350px 150px 120px;
+  }
+  .photo {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 230px;
+    border-radius: 20%;
+    position: relative;
+    top: 30%;
+    left: -10px;
+  }
+  .inf {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    margin-top: 40%;
+    margin-left: 10%;
+    width: 90%;
+  }
+
+  .exp {
+    font-size: 20px;
+    line-height: 150%;
+  }
+  #description {
+    margin-top: 5%;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .classif {
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    margin-top: 15%;
+  }
+  .item-rec,
+  .service-rec,
+  .friend {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .friend {
+    margin-bottom: 20%;
+  }
+  .kakao {
+    width: 40px;
+  }
+  .insta {
+    width: 60px;
+  }
+
+  button {
+    font-size: 10px;
+    width: 60px;
+    height: 20px;
+    border-radius: 6px;
+    color: white;
+    background-color: #c0c0c0;
+    box-shadow: 0px 2px 1px 1px rgba(76, 75, 75, 0.3);
+    border: solid rgb(172, 172, 172) 2px;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    box-shadow: 0px 3px 2px 2px rgba(76, 75, 75, 0.51);
+    border: solid rgba(0, 0, 0, 0.3) 2px;
+    background-color: grey;
+  }
+  .restart-btn {
+    grid-column: 2/4;
+    display: flex;
+  }
+  #reset {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 22px;
+    width: 120px;
     height: 50px;
-    border-radius: 15%;
+    border-radius: 8px;
     background-color: #68a882;
     opacity: 0.87;
     margin-top: 3%;
-    margin-left: 45%;
+    margin-left: 25%;
+    cursor: pointer;
+  }
 }

@@ -1,145 +1,232 @@
 html,
 body {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
 }
 
 body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
 
 .questions {
-    font-size: 30px;
-    font-weight: 700;
-    font-family: 'Noto Sans KR', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .select {
-    margin: 100px 0;
+  margin: 100px 0;
 }
 
 ul span {
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 15px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 0;
 }
 
 ul li {
-    display: inline-block;
-    margin: 0 10px;
-    color: #ec995c;
-}
-
-input[type="radio" i] {
-    -webkit-appearance: none;
-    transition: box-shadow .4s;
-}
-
-input[type="radio" i]:checked {
-    -webkit-appearance: none;
-}
-
-input[type="radio" i]:hover {
-    box-shadow: 0 0 0 2px rgb(141, 141, 141);
-    opacity: 1;
-}
-
-input[type="radio" i]:checked {
-    box-shadow: 0 0 0 4px rgb(148, 148, 148);
-    opacity: 1;
-}
-
-form {
-    height: 100%;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .b1 {
-    border: #ec995c 23px solid;
-    border-radius: 50%;
-    padding: 10px;
+  border: #ec995c 23px solid;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .b2 {
-    border: #ec995c 20px solid;
-    border-radius: 50%;
-    opacity: 55%;
-    padding: 8px;
+  border: #ec995c 20px solid;
+  border-radius: 50%;
+  opacity: 55%;
+  padding: 8px;
+}
+
+.b1:checked,
+.b2:checked {
+  box-shadow: 0 0 0 4px #c96b27;
 }
 
 .b3 {
-    border: #c0c0c0 15px solid;
-    border-radius: 50%;
-    padding: 7px;
+  border: #c0c0c0 15px solid;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.b3:checked {
+  box-shadow: 0 0 0 4px rgb(148, 148, 148);
 }
 
 .b4 {
-    border: #68a882 20px solid;
-    border-radius: 50%;
-    opacity: 55%;
-    padding: 8px;
+  border: #68a882 20px solid;
+  border-radius: 50%;
+  opacity: 55%;
+  padding: 8px;
 }
 
 .b5 {
-    border: #68a882 23px solid;
-    border-radius: 50%;
-    padding: 10px;
+  border: #68a882 23px solid;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.b4:checked,
+.b5:checked {
+  box-shadow: 0 0 0 4px #409160;
+}
+
+input[type="radio" i] {
+  -webkit-appearance: none;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="radio" i]:checked {
+  -webkit-appearance: none;
+  opacity: 1;
+}
+
+input[type="radio" i]:hover {
+  box-shadow: 0 0 0 2px rgb(141, 141, 141);
+  opacity: 1;
+}
+
+form {
+  height: 100%;
 }
 
 .swiper-container {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-    background: #ec995c;
+  background: #ec995c;
 }
 
-.swiper-button-next:after,
-.swiper-container-rtl .swiper-button-prev:after,
-.swiper-button-prev:after,
-.swiper-container-rtl .swiper-button-next:after {
-    color: #ec995c;
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ec995c;
 }
 
 #submit_btn {
-    font-size: 25px;
-    width: 180px;
-    height: 50px;
-    border-radius: 18%;
-    color: white;
-    background-color: #68a882;
-    box-shadow: 0px 3px 2px 2px rgba(76, 75, 75, 0.3);
-    border: solid rgb(172, 172, 172) 2px;
-    transition: .5s;
+  font-size: 25px;
+  width: 180px;
+  height: 50px;
+  border-radius: 18%;
+  color: white;
+  background-color: #68a882;
+  box-shadow: 0px 3px 2px 2px rgba(76, 75, 75, 0.3);
+  border: solid rgb(172, 172, 172) 2px;
+  transition: 0.5s;
 }
 
 #submit_btn:hover {
-    background-color: #ec995c;
-    box-shadow: 0px 5px 2.5px 2.5px rgba(15, 15, 15, 0.3);
+  background-color: #ec995c;
+  box-shadow: 0px 5px 2.5px 2.5px rgba(15, 15, 15, 0.3);
+}
+
+@media (max-width: 500px) {
+  html {
+    height: 100%;
+  }
+  .questions {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 0 40px;
+  }
+  .b1 {
+    border: #ec995c 15px solid;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .b2 {
+    border: #ec995c 12px solid;
+    border-radius: 50%;
+    opacity: 55%;
+    padding: 4px;
+  }
+
+  .b1:checked,
+  .b2:checked {
+    box-shadow: 0 0 0 3px #c96b27;
+  }
+
+  .b3 {
+    border: #c0c0c0 12px solid;
+    border-radius: 50%;
+    padding: 3.5px;
+  }
+
+  .b3:checked {
+    box-shadow: 0 0 0 3px rgb(148, 148, 148);
+  }
+
+  .b4 {
+    border: #68a882 12px solid;
+    border-radius: 50%;
+    opacity: 55%;
+    padding: 4px;
+  }
+
+  .b5 {
+    border: #68a882 15px solid;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .b4:checked,
+  .b5:checked {
+    box-shadow: 0 0 0 3px #409160;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 0;
+    margin-top: -45px;
+  }
+  ul span {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px;
+    margin: 0 -70px -100px;
+  }
 }
